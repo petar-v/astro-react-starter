@@ -8,6 +8,7 @@ main {
     font-weight: 800;
     margin: 0;
   }
+
   .text-gradient {
     background-image: var(--accent-gradient);
     -webkit-background-clip: text;
@@ -15,6 +16,7 @@ main {
     background-size: 400%;
     background-position: 0%;
   }
+
   .instructions {
     line-height: 1.6;
     margin: 1rem 0;

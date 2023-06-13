@@ -7,7 +7,7 @@ module.exports = {
     // "plugin:@typescript-eslint/eslint-recommended",
     'prettier',
   ],
-  
+
   overrides: [
     {
       // Define the configuration for `.astro` file.

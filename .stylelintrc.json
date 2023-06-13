@@ -1,6 +1,13 @@
 {
-  "extends": ["stylelint-config-recommended-scss", "stylelint-config-html"],
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "stylelint-config-html",
+    "stylelint-prettier",
+    "stylelint-prettier/recommended",
+    "stylelint-config-prettier"
+  ],
   "rules": {
+    "prettier/prettier": true,
     "font-family-name-quotes": "always-where-required",
     "font-weight-notation": "named-where-possible",
     "function-url-no-scheme-relative": true,
@@ -16,7 +23,10 @@
         "ignoreProperties": ["/^lost-/"]
       }
     ],
-    "selector-pseudo-class-no-unknown": [true, { "ignorePseudoClasses": ["global"] }]
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global"] }
+    ]
   },
   "ignoreFiles": ["node_modules/*"],
   "defaultSeverity": "error",
