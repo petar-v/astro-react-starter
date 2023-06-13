@@ -1,12 +1,13 @@
 module.exports = {
   extends: [
-    "plugin:perfectionist/recommended-natural",
+    'plugin:perfectionist/recommended-natural',
     'plugin:astro/recommended',
     'plugin:astro/jsx-a11y-recommended', // could be strict instead of recommended
     // "plugin:react/recommended",
     // "plugin:@typescript-eslint/eslint-recommended",
-    "prettier"
+    'prettier',
   ],
+  
   overrides: [
     {
       // Define the configuration for `.astro` file.

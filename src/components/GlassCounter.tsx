@@ -5,7 +5,7 @@ function GlassCounter() {
   return (
     <>
       <p>You've had {count} glasses of water 💧</p>
-      <button onClick={() => setCount(count + 1)}>Add one</button>
+      <button onClick={() => setCount(count + 1)}>Drink water</button>
     </>
   );
 }
