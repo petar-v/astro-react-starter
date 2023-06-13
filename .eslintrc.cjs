@@ -1,10 +1,11 @@
 module.exports = {
   extends: [
+    "plugin:perfectionist/recommended-natural",
     'plugin:astro/recommended',
     'plugin:astro/jsx-a11y-recommended', // could be strict instead of recommended
     // "plugin:react/recommended",
     // "plugin:@typescript-eslint/eslint-recommended",
-    'prettier',
+    "prettier"
   ],
   overrides: [
     {
@@ -15,8 +16,8 @@ module.exports = {
       // Parse the script in `.astro` as TypeScript by adding the following configuration.
       // It's the setting you need when using TypeScript.
       parserOptions: {
-        parser: '@typescript-eslint/parser',
         extraFileExtensions: ['.astro'],
+        parser: '@typescript-eslint/parser',
       },
       rules: {
         // override/add rules settings here, such as:
