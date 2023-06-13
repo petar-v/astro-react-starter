@@ -14,10 +14,5 @@ export default defineConfig({
     assets: true,
   },
   // TODO: add site with env variables
-  integrations: [
-    react(),
-    mdx(),
-    prefetch(),
-    image(),
-  ],
+  integrations: [react(), mdx(), prefetch(), image()],
 });
