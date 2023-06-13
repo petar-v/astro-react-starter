@@ -1,0 +1,19 @@
+{
+  "name": "astro-react-starter",
+  "description": "An Astro website starter with React, SASS and some other things.",
+  "repository": "git@github.com:petar-v/astro-react-starter.git",
+  "author": "Petar Vasilev <petar@pshow.org>",
+  "license": "MIT",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^2.5.6"
+  }
+}
