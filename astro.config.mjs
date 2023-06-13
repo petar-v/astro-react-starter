@@ -10,13 +10,14 @@ export default defineConfig({
   cacheDir: '/tmp/astro/astro-react-starter'
   compressHTML: true,
   output: 'static',
+  experimental: {
+    assets: true,
+  },
   // TODO: add site with env variables
   integrations: [
     react(),
     mdx(),
     prefetch(),
-    image({
-      serviceEntryPoint: '@astrojs/image/sharp',
-    }),
+    image(),
   ],
 });
