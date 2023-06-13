@@ -1,7 +1,7 @@
 # Astro react starter
 
-This is a starter I built for myself that has React, SCSS, and a bunch of other
-sane (to mylself) defaults and instruments. This is meant to get me started on
+This is a starter I built for myself that has React, SASS, and a bunch of other
+sane (to myself) defaults and instruments. This is meant to get me started on
 super quickly building a new project without having to setup all that every time.
 
 ## 🚀 Project Structure
