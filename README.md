@@ -4,6 +4,32 @@ This is a starter I built for myself that has React, SASS, and a bunch of other
 sane (to myself) defaults and instruments. This is meant to get me started on
 super quickly building a new project without having to setup all that every time.
 
+### 🖥️Local setup
+
+After successfully installing those dependencies, open this template with any IDE [[VS Code](https://code.visualstudio.com/) recommended], and then open the internal terminal of IDM [vs code shortcut <code>ctrl/cmd+\`</code>]
+
+-   👉Install dependencies
+
+```
+yarn install
+```
+
+-   👉Run locally
+
+```
+yarn dev
+```
+
+After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
+
+## 🔨Production Build
+
+After finishing all the customization, you can create a production build by running this command.
+
+```
+yarn build
+```
+
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
@@ -46,15 +72,18 @@ All commands are run from the root of the project, from a terminal:
 
 ## 📦️ Dependencies and instruments added
 
-- @astrojs/mdx
-- @astrojs/image
-- @astro-icon
-- React
-- Prettier
-- Eslint
-- Stylelint
-- SASS
-- Husky
+-   @astrojs/mdx
+-   @astrojs/image
+-   @astro-icon
+-   @astro-sitemap
+-   React
+-   Tailwind
+-   Prettier
+-   Eslint
+-   Stylelint
+-   SASS
+-   Husky
+-   And more...
 
 ## 👀 Want to learn more?
 

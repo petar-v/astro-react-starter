@@ -1,21 +1,28 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "noImplicitAny": true,
-    "verbatimModuleSyntax": true,
-    "jsx": "react-jsx",
-    "jsxImportSource": "react",
-    "baseUrl": ".",
-    "paths": {
-      "@components/*": ["src/components/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@styles/*": ["src/styles/*"]
-    }
-  },
+    "extends": "astro/tsconfigs/strict",
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "verbatimModuleSyntax": true,
+        "jsx": "react-jsx",
+        "jsxImportSource": "react",
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "allowSyntheticDefaultImports": true,
+        "paths": {
+            "@layouts/*": ["./src/layouts/*"],
+            "@components/*": ["./src/components/*"],
+            "@partials/*": ["./src/partials/*"],
+            "@shortcodes/*": ["./src/shortcodes/*"],
+            "@config/*": ["./src/config/*"],
+            "@content/*": ["./src/content/*"],
+            "@styles/*": ["./src/styles/*"],
+            "@lib/*": ["./src/lib/*"]
+        }
+    },
 
-  "plugins": [
-    {
-      "name": "@astrojs/ts-plugin"
-    }
-  ]
+    "plugins": [
+        {
+            "name": "@astrojs/ts-plugin"
+        }
+    ]
 }

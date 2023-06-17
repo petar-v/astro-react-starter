@@ -1,5 +1,6 @@
 # Astro output
 dist/
+.output/
 
 # generated types
 .astro/
@@ -18,6 +19,12 @@ pnpm-debug.log*
 
 # Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
+
+# Code editors
+.vscode
+.idea
+tags
+tags.*
 
 # environment variables
 .env
