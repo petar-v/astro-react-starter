@@ -1,5 +1,13 @@
 module.exports = {
+    env: {
+        browser: true,
+        node: true,
+    },
     extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:jsx-a11y/recommended',
+        'plugin:@typescript-eslint/eslint-recommended',
         'plugin:perfectionist/recommended-natural',
         'plugin:astro/recommended',
         'plugin:astro/jsx-a11y-recommended', // could be strict instead of recommended
@@ -7,7 +15,6 @@ module.exports = {
         // "plugin:@typescript-eslint/eslint-recommended",
         'prettier',
     ],
-
     overrides: [
         {
             // Define the configuration for `.astro` file.
@@ -21,9 +28,23 @@ module.exports = {
                 parser: '@typescript-eslint/parser',
             },
             rules: {
-                // override/add rules settings here, such as:
                 'astro/no-set-html-directive': 'error',
             },
         },
     ],
+    parser: '@typescript-eslint/parser',
+    parserOptions: {
+        ecmaVersion: 2022,
+        sourceType: 'module',
+    },
+    rules: {
+        'jsx-a11y/no-onchange': 'off',
+        'react/jsx-uses-react': 'off',
+        'react/react-in-jsx-scope': 'off',
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
 };
