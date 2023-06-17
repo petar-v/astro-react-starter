@@ -35,7 +35,11 @@ export default defineConfig({
             serviceEntryPoint: '@astrojs/image/sharp',
         }),
         sitemap(),
-        tailwind(),
+        tailwind({
+            config: {
+                applyBaseStyles: false,
+            },
+        }),
     ],
     markdown: {
         remarkPlugins: [
