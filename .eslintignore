@@ -1,0 +1,7 @@
+yarn.lock
+.prettierignore
+.eslintignore
+.husky/*
+node_modules
+package.json
+astro.config.mjs

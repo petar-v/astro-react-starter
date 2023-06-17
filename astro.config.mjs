@@ -20,13 +20,7 @@ export default defineConfig({
     // TODO: add site with env variables
     integrations: [
         AutoImport({
-            imports: [
-                '@shortcodes/Button',
-                '@shortcodes/Accordion',
-                '@shortcodes/Notice',
-                '@shortcodes/Video',
-                '@shortcodes/Youtube',
-            ],
+            imports: ['@shortcodes/Button'],
         }),
         react(),
         mdx(),
