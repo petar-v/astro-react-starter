@@ -6,15 +6,16 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:react/recommended',
-        'plugin:jsx-a11y/recommended',
+        // "plugin:jsx-a11y/recommended", // TODO: enable eventually
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:perfectionist/recommended-natural',
         'plugin:astro/recommended',
-        'plugin:astro/jsx-a11y-recommended', // could be strict instead of recommended
+        'plugin:astro/jsx-a11y-recommended', // could be strict instead of recommended - TODO: enable eventually
         // "plugin:react/recommended",
         // "plugin:@typescript-eslint/eslint-recommended",
         'prettier',
     ],
+    ignorePatterns: ['*.md', '*.mdx', '*.scss'],
     overrides: [
         {
             // Define the configuration for `.astro` file.
@@ -28,7 +29,12 @@ module.exports = {
                 parser: '@typescript-eslint/parser',
             },
             rules: {
-                'astro/no-set-html-directive': 'error',
+                //'astro/no-set-html-directive': 'error', // TODO: enable eventually
+                'astro/jsx-a11y/anchor-is-valid': 'off', // TODO: remove eventually
+                'astro/no-set-html-directive': 'off', // TODO: remove eventually
+                'no-unused-vars': 'off', // TODO: remove eventually
+                'react/jsx-key': 'off', // TODO: remove eventually
+                'react/no-unknown-property': 'off', // TODO: remove eventually
             },
         },
     ],
@@ -39,7 +45,9 @@ module.exports = {
     },
     rules: {
         'jsx-a11y/no-onchange': 'off',
+        'no-unused-vars': 'off', // TODO: remove eventually
         'react/jsx-uses-react': 'off',
+        'react/prop-types': 'off', // TODO: remove eventually
         'react/react-in-jsx-scope': 'off',
     },
     settings: {

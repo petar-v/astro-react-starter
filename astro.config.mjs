@@ -1,19 +1,18 @@
-import { defineConfig } from 'astro/config';
-import AutoImport from 'astro-auto-import';
-import react from '@astrojs/react';
+import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import prefetch from '@astrojs/prefetch';
+import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import image from '@astrojs/image';
+import tailwind from '@astrojs/tailwind';
+import { defineConfig } from 'astro/config';
+import AutoImport from 'astro-auto-import';
 import remarkCollapse from 'remark-collapse';
 import remarkToc from 'remark-toc';
-import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
     cacheDir: '/tmp/astro/astro-react-starter',
     compressHTML: true,
-    output: 'static',
     experimental: {
         assets: true,
     },
@@ -23,7 +22,13 @@ export default defineConfig({
             imports: ['@shortcodes/Button'],
         }),
         react(),
-        mdx(),
+        mdx({
+            gfm: false,
+            remarkPlugins: [remarkToc],
+            remarkRehype: { footnoteLabel: 'Footnotes' },
+            shikiConfig: { theme: 'dracula' },
+            syntaxHighlight: 'shiki',
+        }),
         prefetch(),
         image({
             serviceEntryPoint: '@astrojs/image/sharp',
@@ -36,6 +41,7 @@ export default defineConfig({
         }),
     ],
     markdown: {
+        extendDefaultPlugins: true,
         remarkPlugins: [
             remarkToc,
             [
@@ -49,6 +55,6 @@ export default defineConfig({
             theme: 'one-dark-pro',
             wrap: true,
         },
-        extendDefaultPlugins: true,
     },
+    output: 'static',
 });
