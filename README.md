@@ -26,7 +26,6 @@ For pre-commit hooks, this project uses Husky. In order to set it up, you need t
 
 ```
 yarn prepare
-
 ```
 
 After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
