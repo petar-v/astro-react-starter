@@ -20,6 +20,15 @@ yarn install
 yarn dev
 ```
 
+## 🐕🐶 Pre-commit hooks
+
+For pre-commit hooks, this project uses Husky. In order to set it up, you need to run the following command only initially:
+
+```
+yarn prepare
+
+```
+
 After that, it will open up a preview of the template in your default browser, watch for changes to source files, and live-reload the browser when changes are saved.
 
 ## 🔨Production Build
@@ -40,7 +49,8 @@ Inside of your Astro project, you'll see the following folders and files:
 │   └── favicon.svg
 ├── src/
 │   ├── components/
-│   │   └── Card.astro
+│   │   ├── Card.astro
+│   │   └── GlassCounter.tsx
 │   ├── layouts/
 │   │   └── Layout.astro
 │   └── pages/
