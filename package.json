@@ -71,7 +71,7 @@
         "postcss-lit": "^1.1.0",
         "prettier": "^3.0.0",
         "prettier-plugin-astro": "^0.11.0",
-        "prettier-plugin-tailwindcss": "^0.4.0",
+        "prettier-plugin-tailwindcss": "^0.4.1",
         "remark-collapse": "^0.1.2",
         "remark-toc": "^8.0.1",
         "sass": "^1.63.6",
