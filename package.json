@@ -5,7 +5,7 @@
     "author": "Petar Vasilev <petar@pshow.org>",
     "license": "MIT",
     "type": "module",
-    "version": "1.1",
+    "version": "1.2",
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
