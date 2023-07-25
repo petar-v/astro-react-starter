@@ -1,4 +1,3 @@
-import image from '@astrojs/image';
 import mdx from '@astrojs/mdx';
 import prefetch from '@astrojs/prefetch';
 import react from '@astrojs/react';
@@ -30,9 +29,6 @@ export default defineConfig({
             syntaxHighlight: 'shiki',
         }),
         prefetch(),
-        image({
-            serviceEntryPoint: '@astrojs/image/sharp',
-        }),
         sitemap(),
         tailwind({
             config: {
