@@ -62,7 +62,7 @@
         "eslint-plugin-astro": "^0.27.2",
         "eslint-plugin-jsx-a11y": "^6.7.1",
         "eslint-plugin-perfectionist": "^1.5.1",
-        "eslint-plugin-react": "^7.33.0",
+        "eslint-plugin-react": "^7.33.1",
         "husky": "^8.0.0",
         "lint-staged": "^13.2.3",
         "markdownlint": "^0.29.0",
