@@ -15,7 +15,7 @@ module.exports = {
         // "plugin:@typescript-eslint/eslint-recommended",
         'prettier',
     ],
-    ignorePatterns: ['*.md', '*.mdx', '*.scss'],
+    ignorePatterns: ['*.md', '*.mdx', '*.scss', 'dist'],
     overrides: [
         {
             // Define the configuration for `.astro` file.
