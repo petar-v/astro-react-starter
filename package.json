@@ -9,7 +9,7 @@
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
-        "build": "astro build",
+        "build": "astro check && tsc --noEmit && astro build",
         "preview": "astro preview",
         "astro": "astro",
         "lint": "eslint '**/*.{js,ts,jsx,tsx,cjs,mjs,astro}' --fix",
