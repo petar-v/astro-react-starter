@@ -9,14 +9,15 @@
     "scripts": {
         "dev": "astro dev",
         "start": "astro dev",
-        "build": "astro check && tsc --noEmit && astro build",
+        "build": "yarn checks && astro build",
         "preview": "astro preview",
         "astro": "astro",
         "lint": "eslint '**/*.{js,ts,jsx,tsx,cjs,mjs,astro}' --fix",
         "stylelint": "stylelint '**/*.{css,scss,js,ts}'",
         "prettify": "prettier --write .",
         "prepare": "husky install",
-        "precommit": "lint-staged"
+        "precommit": "lint-staged && yarn checks",
+        "checks": "astro check && tsc --noEmit"
     },
     "lint-staged": {
         "**/*.{jsx,tsx,js,ts,cjs,mjs}": [
