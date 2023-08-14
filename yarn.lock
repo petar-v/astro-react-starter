@@ -25,12 +25,7 @@
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.5.7.tgz#8c377f30bc4542631d4adc11f48896d78f79a8ac"
   integrity sha512-dFU7GAMbpTUGPkRoCoMQrGFlTe3qIiQMSOxIXp/nB1Do4My9uogjEmBHdR5Cwr4i6rc5/1R3Od9v8kU/pkHXGQ==
 
-"@astrojs/compiler@^1.0.0", "@astrojs/compiler@^1.0.1", "@astrojs/compiler@^1.4.2", "@astrojs/compiler@^1.5.5":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.6.2.tgz#53f15a4f7f0ddb23dc9e1e1e571f897a48dd3798"
-  integrity sha512-2grH0lSm/Su88ZUd1kF0OdR/CT4ClWKvCwVz4yDdpgLgpzXhs1LdO2V58YfSqnx/z+G5EBWv6yEkp3tDG3GQYQ==
-
-"@astrojs/compiler@^1.8.0":
+"@astrojs/compiler@^1.0.0", "@astrojs/compiler@^1.0.1", "@astrojs/compiler@^1.4.2", "@astrojs/compiler@^1.5.5", "@astrojs/compiler@^1.8.0":
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/@astrojs/compiler/-/compiler-1.8.1.tgz#43575b1a35b16cb8ffe56792870b00e5306c673f"
   integrity sha512-C28qplQzgIJ+JU9S+1wNx+ue2KCBUp0TTAd10EWAEkk4RsL3Tzlw0BYvLDDb4KP9jS48lXmR4/1TtZ4aavYJ8Q==
@@ -1449,10 +1444,10 @@ astro-icon@^0.8.1:
     resolve-pkg "^2.0.0"
     svgo "^2.8.0"
 
-astro@^2.10.5:
-  version "2.10.5"
-  resolved "https://registry.yarnpkg.com/astro/-/astro-2.10.5.tgz#23be82a8537507d592c09947b30ce746dedd0065"
-  integrity sha512-/GlDb0iHq9smACrCqVu/AaNi5+fqJuPOVTthm5fFNi+OBRprY0DW8juaov8o+M1X6SvIyIbOcd04+ZsYrIF0Sg==
+astro@^2.10.7:
+  version "2.10.7"
+  resolved "https://registry.yarnpkg.com/astro/-/astro-2.10.7.tgz#069368f03e7a00c0bdf75c82aba1fc417f74d768"
+  integrity sha512-R8aF4yphrsbhxW2UxHZ1DslBn8e8vPQ23+Z/OnajNE1Q4HEZCOZ4CAbHJx2PDwq2p+CRWArNalpr3+rTqyOYBQ==
   dependencies:
     "@astrojs/compiler" "^1.8.0"
     "@astrojs/internal-helpers" "^0.1.2"
